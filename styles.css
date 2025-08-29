@@ -1,0 +1,231 @@
+/* General */
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente predeterminada del texto. */
+    margin: 0; /* Elimina los márgenes alrededor de la página. */
+    padding: 0; /* Elimina los rellenos alrededor de la página. */
+    background-color: #BF793B; /* Fondo azul claro para toda la página. */
+    color: #BF793B; /* Texto azul oscuro para facilitar la lectura. */
+}
+
+/* Encabezado */
+header {
+    background-color: #400101; /* Fondo azul fuerte para el encabezado. */
+    color: #F2D022; /* Texto blanco para contraste con el fondo. */
+    padding: 20px; /* Añade espacio interno alrededor del contenido del encabezado. */
+    text-align: center; /* Centra el texto del encabezado. */
+}
+
+header h1 {
+    margin: 0; /* Elimina el margen superior e inferior del título principal. */
+    font-size: 2.5em; /* Establece el tamaño de la fuente del título principal. */
+}
+
+nav ul {
+    list-style: none; /* Elimina los puntos o números de la lista de navegación. */
+    padding: 0; /* Elimina el relleno interno de la lista. */
+    margin: 0; /* Elimina los márgenes alrededor de la lista. */
+    display: flex; /* Hace que los elementos de la lista se organicen en línea. */
+    justify-content: center; /* Centra los elementos de la lista horizontalmente. */
+}
+
+nav ul li {
+    margin: 0 15px; /* Añade espacio horizontal entre los elementos del menú. */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces. */
+    color: #F2D022; /* Establece el color del texto de los enlaces a blanco. */
+    font-weight: bold; /* Hace que el texto de los enlaces sea más grueso. */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Añade un subrayado cuando se pasa el ratón sobre los enlaces. */
+}
+
+/* Secciones */
+section {
+    margin: 20px auto; /* Añade espacio superior e inferior y centra horizontalmente. */
+    padding: 20px; /* Añade espacio interno alrededor del contenido de las secciones. */
+    max-width: 900px; /* Limita el ancho máximo de las secciones a 900px. */
+    background-color: #400101; /* Fondo blanco para las secciones. */
+    border-radius: 8px; /* Bordes redondeados para un diseño moderno. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto de elevación. */
+}
+
+section h2 {
+    border-bottom: 2px solid #F2B035; /* Línea azul debajo de los títulos de las secciones. */
+    padding-bottom: 5px; /* Espacio entre el texto y la línea inferior. */
+    color: #F2D022; /* Color azul fuerte para los títulos de las secciones. */
+    text-align: center;    
+}
+
+section p {
+    text-align: center;
+}
+
+section p, section ul {
+    margin: 15px 0; /* Añade espacio vertical alrededor de los párrafos y listas. */
+}
+
+/* Listas */
+ul {
+    padding-left: 20px; /* Añade sangría a las listas para mayor claridad. */
+}
+
+ul li {
+    margin-bottom: 10px; /* Añade espacio entre los elementos de las listas. */
+}
+
+/* Galería */
+section#galeria div {
+    /*display: flex; /* Organiza los elementos de la galería en línea. */
+    justify-content: space-around; /* Distribuye los elementos con espacio entre ellos. */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas si es necesario. */
+    gap: 15px; /* Espaciado uniforme entre elementos de la galería. */
+}
+
+section#galeria img {
+    margin: 2px;
+    border: 2px solid #BF793B; /* Añade un borde azul alrededor de las imágenes. */
+    border-radius: 8px; /* Bordes redondeados para las imágenes. */
+    width: 200px; /* Fija el ancho de las imágenes a 200px. */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción. */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para resaltar las imágenes. */
+}
+
+
+/* Contenedor Flexbox */
+.flex-container {
+    display: flex; /* Activa el modo Flexbox */
+    flex-direction: column;    
+    justify-content: space-around; /* Espacia uniformemente los elementos */
+    align-items: center; /* Centra los elementos verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a varias líneas */
+    gap: 20px; /* Espaciado entre los elementos */
+    padding: 20px; /* Espaciado interno del contenedor */
+    background-color: #e0e0e0; /* Fondo gris claro */
+    border-radius: 10px; /* Bordes redondeados */    
+}
+
+.flex-item1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;  
+}
+
+.flex-item2{
+    /*display: flex;*/
+    flex-direction: column;
+    gap: 5px;
+    background-color: #400101; /* Fondo azul intermedio */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    flex: 1; /* Hace que todos los elementos crezcan proporcionalmente */
+    min-width: 90%; /* Tamaño mínimo de los elementos */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de los elementos */  
+}
+
+/* Elementos Flexbox */
+.item {
+    background-color: #400101; /* Fondo azul intermedio */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    flex: 1; /* Hace que todos los elementos crezcan proporcionalmente */
+    min-width: 100px; /* Tamaño mínimo de los elementos */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de los elementos */
+}
+
+.item2{
+    background-color: #400101; /* Fondo azul intermedio */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+    flex: 1; /* Hace que todos los elementos crezcan proporcionalmente */
+    min-width: 90%; /* Tamaño mínimo de los elementos */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de los elementos */
+}
+
+
+
+
+/* Pie de página */
+footer {
+    background-color: #400101; /* Fondo azul fuerte para el pie de página. */
+    color: #BF793B; /* Texto blanco para contraste con el fondo. */
+    text-align: center; /* Centra el texto en el pie de página. */
+    padding: 15px; /* Añade espacio interno alrededor del contenido del pie de página. */
+    margin-top: 20px; /* Espacio superior para separar el pie de página del contenido principal. */
+}
+
+footer a {
+    color: #F2D022; /* Azul cielo para los enlaces en el pie de página. */
+    text-decoration: none; /* Elimina el subrayado de los enlaces en el pie de página. */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Añade un subrayado al pasar el ratón sobre los enlaces. */
+}
+
+a{
+   text-decoration: none;
+   color: #BF793B
+}
+
+/* Para tablets y pantallas medianas */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em; /* Reduce el tamaño del título en tablets y pantallas medianas. */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Apila los enlaces del menú verticalmente en lugar de en una fila. */
+        gap: 10px; /* Disminuye el espacio entre enlaces para ajustarse mejor al tamaño de pantalla. */
+    }
+
+    section h2 {
+        font-size: 2em; /* Reduce ligeramente el tamaño de los títulos en secciones para mejor legibilidad. */
+    }
+}
+
+/* Para móviles y pantallas pequeñas */
+@media (max-width: 480px) {
+    header {
+        padding: 10px; /* Reduce el espacio interno del encabezado para optimizar el espacio disponible. */
+    }
+
+    header h1 {
+        font-size: 1.2em; /* Reduce el tamaño del título aún más para pantallas más pequeñas. */
+    }
+
+    section {        
+        padding: 40px 10px; /* Ajusta el relleno de las secciones para aprovechar mejor el espacio. */
+    }
+
+    
+    .flex-item1 {
+        display:block;        
+        gap: 10px;
+        text-align: center;        
+    }
+
+    .item {
+        margin: 5px;
+    }
+
+    .form-container {
+        padding: 15px; /* Disminuye el espacio interno del formulario para que sea más compacto en móviles. */
+        max-width: 100%; /* Asegura que el formulario ocupe todo el ancho de la pantalla en móviles. */
+    }
+
+
+
+    footer {
+        font-size: 0.8em; /* Reduce el tamaño del texto en el pie de página para pantallas pequeñas. */
+    }
+
+}
